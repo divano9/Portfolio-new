@@ -1,0 +1,346 @@
+
+@media(min-width:600px){
+    
+    *{
+        font-size: 14px;
+    }
+
+     h1{
+        font-size: 4rem;
+    }
+
+    .soft-skills img{
+        height: 100px;
+        width: 40%;
+    }
+
+    .soft-skills #res img{
+        height: 150px;
+        width: 60%;
+    }
+
+    .field{
+        top: 80px;
+        margin-left: auto;
+    }
+
+    .rating span:after{
+        font-size: 25px;
+    }
+
+    .welcome{
+        overflow: hidden;
+    }
+
+
+    
+
+}
+
+@media(min-width:768px){
+
+    *{
+        font-size: 16px;
+    }
+
+    .rating span {
+        height: 5px;
+        width: 20px;
+    }
+    
+    .rating span {
+        height: 20px;
+        width: 30px;
+    }
+
+    .rating span:after{
+        font-size: 40px;
+    }
+
+
+    .skills .rating{
+        display: inline-block;
+    }
+
+    .field{
+        top: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .skills .field{
+        padding-left: 10px;
+        padding-right: 15px;
+    }
+
+    #ps .rating{
+        
+        left: 10px;
+    }
+
+    #ang .rating{
+        left: 10px;
+    }
+
+    #wp .rating{
+        left: 10px;
+    }
+
+    .skills i{
+        text-align: center;
+        margin-left: 0px;
+        
+    }
+    
+     .skills img{
+         margin: 0 auto;
+         margin-bottom: 25px;
+     }
+
+     .vl1,.vl2, .vl3{
+         display: block;
+     }
+
+     .soft-skills img{
+        height: 150px;
+        width: 70%;
+    }
+
+    .soft-skills #res img{
+        height: 195px;
+        width: 80%;
+    }
+
+    #cre img, #team img{
+        margin-bottom: 45px;
+        margin-left: 20px;
+    }
+
+    .contact .bot-social div{
+        margin-bottom: 0;
+    }
+    .rating span{
+        font-size: 25px;
+    }
+
+    .welcome h3 div{
+        display: none;
+    }
+
+    .welcome h2 div{
+        display: block;
+    }
+   
+}
+
+
+
+
+@media(min-width:992px){
+
+    .rating span{
+        font-size: 30px;
+    }
+
+    .about-me figure{
+        width: 260px;
+        height: 380px;
+    }
+
+    .field, .skills .field{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .contact .dwn-resume{
+        font-size: 0.7rem;
+    }
+
+    
+    .welcome h2 div{
+        font-size: 35px;
+    }
+
+    .starwars .start {
+        font-size: 180%;
+    }
+
+    .starwars .intro {
+        font-size: 170%;
+    }
+
+    .starwars .titles {
+        font-size: 220%;
+    }
+
+}
+
+
+    
+
+@media(min-width:1200px){
+
+    .rating{
+        margin-left: 25px;
+        
+    }
+
+    .skills i{
+        display: inline;
+        
+    }
+
+    .skills img{
+        width: 60px;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .skill, .skill#ps{
+        margin-bottom: 30px; 
+    }
+
+    #ang{
+        margin-top: 0px;
+    }
+
+    #ps .rating{
+        margin-left: 10px;
+        
+    }
+
+    #ps{
+        padding: 0;
+    }
+
+    #wp .rating{
+        margin-left: -0px;
+    }
+
+    #ps img{
+        margin-left: -20px;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #wp i{
+        left: -15px;
+    }
+
+
+    #ang .rating{
+        margin-left: 13px;
+    }
+
+    
+
+    #ang i {
+        position: relative;
+        left: -8px;
+    }
+
+    .about-me  p{
+        max-width: 41%;
+    }
+
+    .about-me figure{
+        margin-bottom: 0;
+    }
+
+    .about-me .hr{
+        display: none;
+    }
+
+    .about-me figure{
+        width: 270px;
+        height: 400px;
+        margin-right: 70px;
+        margin-left: 20px;
+    }
+
+    .about-me h1, .skills h1, .projects h1, .contact h1{
+        text-align: left !important;
+        font-size: 4rem;
+        
+    } 
+
+    .soft-skills h2{
+        text-align: left;
+    }
+
+    .field{
+        max-width: 800px;
+    }
+
+    .projects .field{
+        max-width: 900px;
+    }
+
+    .soft-skills img{
+        height: 160px;
+        width: 80%;
+    }
+
+    .soft-skills #res img{
+        height: 200px;
+        width: 100%;
+    }
+
+    #res img{
+        margin-bottom: 30px;
+    }
+
+    .vl1{
+        left:37%;
+        height: 55%;
+    }
+
+    .vl2{
+        height: 55%;
+    }
+
+    .welcome h2 div{
+        font-size: 40px;
+    }
+
+    .welcome  div:last-of-type{
+        top: -10%;
+    }
+
+    .starwars .start {
+        font-size: 200%;
+    }
+
+    .starwars .intro {
+        font-size: 200%;
+    }
+
+    .starwars .titles {
+        font-size: 300%;
+    }
+
+}
+
+/* @media(max-height:540px){
+    .nav-side{
+        display: none;
+    }
+
+    .nav-side-mob{
+        display: none;
+    }
+
+    .nav-top{
+        display: block;
+    }
+
+} */
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Courgette|Oxygen:300,400,700|Paytone+One&display=swap&subset=latin-ext"
+        rel="stylesheet">
+
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--materialize-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css">
+    <!--animated font awesome-->
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+    <!--not-sw plugin-->
+    <link rel="stylesheet" href="css/not-star-wars.css">
+    <!--style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Dušan Ivanović | Junior Front End Developer</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--NAVIGATION-->
+        <nav class="nav-side " id="main-nav">
+            <div id="arrows">
+                <a href="home.html" id="up">
+                    <i class="far fa-arrow-circle-up"></i>
+                </a>
+                <a href="skills.html" id="down" class="mbot1">
+                    <i class="far fa-arrow-circle-down"></i>
+                </a>
+            </div>
+            <div id="main-menu" class="mbot1">
+
+
+                <a href="home.html" id="nav-home">
+                    <i class="far fa-home"></i>
+                    <p>home</p>
+                    <span class="sr-only">(current)</span>
+                </a>
+
+                <a href="about.html" id="nav-about-me">
+                    <i class="far fa-user-ninja"></i>
+                    <p>about</p>
+                </a>
+
+
+                <a href="skills.html" id="nav-skills">
+                    <i class="far fa-address-card"></i>
+                    <p>skills</p>
+                </a>
+
+                <a href="projects.html" id="nav-projects">
+                    <i class="far fa-browser"></i>
+                    <p>projects</p>
+                </a>
+
+                <a href="contact.html" id="nav-contact">
+                    <i class="far fa-envelope"></i>
+                    <p>contact</p>
+                </a>
+            </div>
+            <div id="social" class="mbot1">
+                <a href="https://www.facebook.com/dusan.ivanovic.33" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/du%C5%A1an-ivanovi%C4%87-61b950160/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/divano9?tab=repositories" target="_blank">
+                    <i class="fab fa-github-alt"></i>
+                </a>
+            </div>
+            <div>
+                <span id="nav-credits">
+                    <i class="far fa-hands-helping" id="myBtn"></i>
+
+                    <img src="assets/icons/Darth-Vader-icon.png" alt="DW" id="myBtn2">
+                </span>
+            </div>
+        </nav>
+
+        <!--section about-me-->
+
+        <section class="about-me">
+            <div class="field shadow fade-in one">
+
+                <h1 class="mbot1">About Me</h1>
+
+                <div class="row">
+                    <figure class="shadow2">
+                        <img src="assets/img/me-g-b.jpg" alt="">
+                    </figure>
+                    <div class="hr"></div>
+                    <p>
+                        My name is Dušan Ivanović, I believe myself to be a hot prospect in front end development business
+                        <span id="smiley">:-)</span>. I've chosen front end because I love how it combines coding and programming with design
+                        and creativity. I'm a lover of Japanese culture, music, games and good food. Curently I'm living
+                        in Belgrade, Serbia, working as a freelance junior front end developer, and am always looking forward
+                        to new chalanges and learning opportunities.
+
+                    </p>
+
+                </div>
+
+
+            </div>
+
+            <div class="field shadow bot-mail row fade-in two">
+                <div class="col-md-8">
+                    <p>e-mail :
+                        <br>
+                        <span id="myEmail">dusanivanovic@mail.com</span>
+                    </p>
+                </div>
+
+                <div class="col-md-4 copy">
+                    <a href="#" id="copy-btn" onclick="copyToClip(event)">COPY E-MAIL</a>
+                </div>
+
+            </div>
+
+
+    </div>
+
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <i class="far fa-times-circle close"></i>
+
+
+            <article id="sw" class="starwars">
+                <audio preload="auto" id="song">
+                    <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.ogg" type="audio/ogg" />
+                    <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg" />
+                </audio>
+
+                <section class="start">
+                    <p>
+                        warning!
+                        <i class="fas fa-volume-up start"></i>
+                    </p>
+                    <p> Click to Start</p>
+                </section>
+
+                <div class="animation">
+
+                    <section class="intro">
+                        Credits and special thanks
+                        <br> to the people I got inspiration from....
+                    </section>
+
+                    <section class="titles">
+                        <div contenteditable="true" spellcheck="false">
+                            <p>
+                                Design : Dušan Ivanović
+                                <br> Front End : Dušan Ivanović
+                                <br> QA : Dušan Ivanović
+                            </p>
+
+                            <p>
+                                A Shout Out to:
+                            </p>
+                            Tim Pietrusky
+                            <a href="https://codepen.io/TimPietrusky">https://codepen.io/TimPietrusky</a> for this cool star wars crawl, and Geoff Graham for nice
+                            collection of star wars crawl snippets at
+                            <a href="https://css-tricks.com/snippets/css/star-wars-crawl-text/">https://css-tricks.com/snippets/css/star-wars-crawl-text/</a>
+                            <p>
+                                Oriongunning
+                                <a href="https://github.com/oriongunning/gridder">https://github.com/oriongunning/gridder</a> for gridder (used in projects section), and Chris
+                                Coyier for gradient borders
+                                <a href="https://css-tricks.com/gradient-borders-in-css/">https://css-tricks.com/gradient-borders-in-css/</a>
+                            </p>
+                            <p>
+                                Munro3
+                                <a href="https://pixabay.com/users/munro3-967666/?tab=latest">https://pixabay.com/users/munro3-967666</a> for wonderfull graphics, and Joseph Fusco for
+                                unicode star rating (used in skills section)
+                                <a href="https://codepen.io/fusco/pen/MwawEL">https://codepen.io/fusco/pen/MwawEL</a>
+                            </p>
+                            <p>
+                                Angel A. Guadarrama B.
+                                <a href="https://codepen.io/fr33co">https://codepen.io/fr33co</a> for fade-in animation snippet, and various stack overflow users
+                                who helped me with my questions...
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </article>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!--     Font Awesome
+    <script src="js/all.min.js"></script> -->
+    <!--JQuery-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Vide plugin-->
+    <script src="js/jquery.vide.min.js"></script>
+    <!--Bootstrap-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <!--main.js-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

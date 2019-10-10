@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--JQuery-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700|Courgette|Oxygen:300,400,700|Paytone+One&display=swap&subset=latin-ext"
+        rel="stylesheet">
+
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--materialize-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css">
+    <!--animated font awesome-->
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+    <!--Gridder css-->
+    <link rel="stylesheet" href="css/jquery.gridder.min.css">
+    <!--not-sw plugin-->
+    <link rel="stylesheet" href="css/not-star-wars.css">
+    <!--style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+
+    <title>Dušan Ivanović | Junior Front End Developer</title>
+
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--NAVIGATION-->
+        <nav class="nav-side" id="main-nav">
+            <div id="arrows">
+                <a href="projects.html" id="up">
+                    <i class="far fa-arrow-circle-up"></i>
+                </a>
+                <a href="home.html" id="down" class="mbot1">
+                    <i class="far fa-arrow-circle-down"></i>
+                </a>
+            </div>
+            <div id="main-menu" class="mbot1">
+
+
+                <a href="home.html" id="nav-home">
+                    <i class="far fa-home"></i>
+                    <p>home</p>
+                    <span class="sr-only">(current)</span>
+                </a>
+
+                <a href="about.html" id="nav-about-me">
+                    <i class="far fa-user-ninja"></i>
+                    <p>about</p>
+                </a>
+
+
+                <a href="skills.html" id="nav-skills">
+                    <i class="far fa-address-card"></i>
+                    <p>skills</p>
+                </a>
+
+                <a href="projects.html" id="nav-projects">
+                    <i class="far fa-browser"></i>
+                    <p>projects</p>
+                </a>
+
+                <a href="contact.html" id="nav-contact">
+                    <i class="far fa-envelope"></i>
+                    <p>contact</p>
+                </a>
+            </div>
+            <div id="social" class="mbot1">
+                <a href="https://www.facebook.com/dusan.ivanovic.33" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/du%C5%A1an-ivanovi%C4%87-61b950160/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/divano9?tab=repositories" target="_blank">
+                    <i class="fab fa-github-alt"></i>
+                </a>
+            </div>
+            <div>
+                <span id="nav-credits">
+                    <i class="far fa-hands-helping " id="myBtn"></i>
+                    <img src="assets/icons/Darth-Vader-icon.png" alt="DW" id="myBtn2">
+                </span>
+            </div>
+        </nav>
+
+        <!--section projects-->
+
+        <section class="contact">
+            <div class="field shadow fade-in one">
+                <h1 class="mbot1">contact me</h1>
+                <form action="mailto:dusanivanovic@mail.com" method="post" class="contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" value="" name="name" class="form-control" placeholder="Your name">
+                                    <span class="input-group-addon fa fa-user"></span>
+                                </div>
+                                <div class="error"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" value="" name="email" class="form-control" placeholder="Your email">
+                                    <span class="input-group-addon fa fa-envelope"></span>
+                                </div>
+                                <div class="error"></div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <textarea name="message" style="width: 100%; height: 100px;" placeholder="Your message" class="form-control"></textarea>
+                                    <span class="input-group-addon fa fa-comment"></span>
+                                </div>
+                                <div class="error"></div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <button type="submit" value="submit" name="submit" class="btn btn-dark submit-btn">SUBMIT</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="field shadow bot-social row fade-in two">
+                <div class="col-md-3 bot-facebook">
+                    <a href="https://www.facebook.com/dusan.ivanovic.33" target="_blank">
+                        <i class="fab fa-facebook-square faa-vertical animated-hover"></i>
+                    </a>
+                </div>
+
+                <div class="col-md-3 bot-linkedin">
+                    <a href="https://www.linkedin.com/in/du%C5%A1an-ivanovi%C4%87-61b950160/" target="_blank">
+                        <i class="fab fa-linkedin faa-vertical animated-hover"></i>
+                    </a>
+                </div>
+
+                <div class="col-md-3 bot-github">
+                    <a href="https://github.com/divano9?tab=repositories" target="_blank">
+                        <i class="fab fa-github-alt faa-tada animated-hover"></i>
+                    </a>
+                </div>
+
+                <div class="col-md-3 resume">
+                    <div class="vl3"></div>
+                    
+                        <a href="assets/download/Dusan Ivanovic CV.docx" download class="dwn-resume pulse">DOWNLOAD MY RESUME</a>
+                        
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <i class="far fa-times-circle close"></i>
+
+
+                <article id="sw" class="starwars">
+                    <audio preload="auto" id="song">
+                        <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.ogg" type="audio/ogg" />
+                        <source src="https://s.cdpn.io/1202/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg" />
+                    </audio>
+
+                    <section class="start">
+                        <p>
+                            warning!<i class="fas fa-volume-up start"></i>
+                        </p>
+                        <p> Click to Start</p>
+                    </section>
+
+                    <div class="animation">
+
+                        <section class="intro">
+                            Credits and special thanks
+                            <br> to the people I got inspiration from....
+                        </section>
+
+                        <section class="titles">
+                            <div contenteditable="true" spellcheck="false">
+                                <p>
+                                    Design : Dušan Ivanović
+                                    <br> Front End : Dušan Ivanović
+                                    <br> QA : Dušan Ivanović
+                                </p>
+
+                                <p>
+                                    A Shout Out to:
+                                </p>
+                                Tim Pietrusky
+                                <a href="https://codepen.io/TimPietrusky">https://codepen.io/TimPietrusky</a> for this cool star wars crawl, and Geoff Graham for nice
+                                collection of star wars crawl snippets at
+                                <a href="https://css-tricks.com/snippets/css/star-wars-crawl-text/">https://css-tricks.com/snippets/css/star-wars-crawl-text/</a>
+                                <p>
+                                    Oriongunning
+                                    <a href="https://github.com/oriongunning/gridder">https://github.com/oriongunning/gridder</a> for gridder (used in projects section), and
+                                    Chris Coyier for gradient borders
+                                    <a href="https://css-tricks.com/gradient-borders-in-css/">https://css-tricks.com/gradient-borders-in-css/</a>
+                                </p>
+                                <p>
+                                    Munro3
+                                    <a href="https://pixabay.com/users/munro3-967666/?tab=latest">https://pixabay.com/users/munro3-967666</a> for wonderfull graphics, and Joseph Fusco
+                                    for unicode star rating (used in skills section)
+                                    <a href="https://codepen.io/fusco/pen/MwawEL">https://codepen.io/fusco/pen/MwawEL</a>
+                                </p>
+                                <p>
+                                    Angel A. Guadarrama B.
+                                    <a href="https://codepen.io/fr33co">https://codepen.io/fr33co</a> for fade-in animation snippet, and various stack overflow
+                                    users who helped me with my questions...
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+
+
+
+
+        <!--     Font Awesome
+    <script src="js/all.min.js"></script> -->
+
+        <!--Bootstrap-->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!--jqery validate-->
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+        <!--main.js-->
+        <script src="js/main.js"></script>
+
+        <!-- Form Validation -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(function () {
+                    $(".contact-form").validate({
+                        highlight: function (element) {
+                            $(element).closest('.form-group').addClass("has-danger");
+
+                        },
+                        unhighlight: function (element) {
+                            $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+
+                        },
+                        rules: {
+                            name: {
+                                required: true,
+                                rangelength: [3, 255]
+                            },
+                            email: {
+                                required: true,
+                                email: true
+                            },
+                            message: {
+                                required: true,
+                                rangelength: [10, 255]
+                            }
+
+                        },
+                        messages: {
+                            name: {
+                                required: "The *Name field is required!",
+                                rangelength: "The *Name must be between 3 and 255 characters!"
+                            },
+                            email: {
+                                required: "The *Email field is required!",
+                                email: "Please enter a valid email address!"
+                            },
+                            message: {
+                                required: "The *Message field is required!",
+                                rangelength: "The *Messafe must be between 10 and 255 characters!"
+                            }
+                        },
+                        errorElement: 'p',
+                        errorPlacement: function (error, element) {
+                            error.appendTo($(element).closest('.form-group').find('.error'));
+                        }
+
+                    });
+                });
+            });
+
+
+
+        </script>
+</body>
+
+</html>
