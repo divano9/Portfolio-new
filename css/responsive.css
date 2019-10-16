@@ -240,7 +240,7 @@
     }
 
     .about-me  p{
-        max-width: 40%;
+        max-width: 41%;
     }
 
     .about-me figure{
@@ -252,8 +252,8 @@
     }
 
     .about-me figure{
-        width: 260px;
-        height: 390px;
+        width: 270px;
+        height: 400px;
         margin-right: 70px;
         margin-left: 20px;
     }
