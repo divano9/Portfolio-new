@@ -1,4 +1,7 @@
 
+
+
+
 //responsive nav
 
 let navClass = document.getElementById('main-nav').className;
@@ -9,7 +12,7 @@ const nav = document.getElementById('main-nav');
 let screenW = document.documentElement.clientWidth;
 
 
-if (screenW > 768) {
+if (screenW > 992) {
   nav.classList.remove("nav-top")
   nav.classList.remove("nav-side-mob")
   nav.classList.add("nav-side")
@@ -22,6 +25,23 @@ if (screenW > 768) {
   nav.classList.remove("nav-top")
   nav.classList.add("nav-side-mob")
 }
+
+window.onresize = function(){
+  if (screenW > 992) {
+    nav.classList.remove("nav-top")
+    nav.classList.remove("nav-side-mob")
+    nav.classList.add("nav-side")
+  } else if (screenW > 600) {
+    nav.classList.remove("nav-side")
+    nav.classList.remove("nav-side-mob")
+    nav.classList.add("nav-top");
+  } else {
+    nav.classList.remove("nav-side")
+    nav.classList.remove("nav-top")
+    nav.classList.add("nav-side-mob")
+  }
+}
+
 
 
 
@@ -69,6 +89,38 @@ if (nav.classList.contains("nav-side-mob")) {
   changeContent("nav-contact", "CONTACT");
   
 }
+
+
+
+
+  // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+    if(hamburger.classList.contains("is-active")){
+      nav.style.display = "block";
+      console.log("active")
+      document.body.classList.add("lockScroll");
+    }else{
+      nav.style.display = "none"
+      console.log("not")
+      document.body.classList.remove("lockScroll");
+    }
+
+   
+  });
+
+
+  if(hamburger.classList.contains("is-active")){
+    document.getElementsByClassName("nav-side-mob").style.display = "block";
+  }
+
+  
+
+  
 
 //copy email to clipboard
 

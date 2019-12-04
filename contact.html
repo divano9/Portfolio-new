@@ -27,6 +27,8 @@
     <link rel="stylesheet" href="css/jquery.gridder.min.css">
     <!--not-sw plugin-->
     <link rel="stylesheet" href="css/not-star-wars.css">
+    <!--hamburger buttons-->
+    <link rel="stylesheet" href="css/hamburgers.css">
     <!--style.css-->
     <link rel="stylesheet" href="css/style.css">
     <!--responsive-->
@@ -42,7 +44,15 @@
 <body>
     <div class="wrapper">
         <!--NAVIGATION-->
+         <!--hamburger btn-->
+         <button class="hamburger hamburger--squeeze" type="button" >
+                <span class="hamburger-box">
+                    <span class="hamburger-inner" ></span>
+                </span>
+            </button>
         <nav class="nav-side " id="main-nav">
+           
+
             <div id="arrows">
                 <a href="projects.html" id="up">
                     <i class="far fa-arrow-alt-circle-up"></i>
@@ -168,7 +178,7 @@
                 <div class="col-md-3 resume">
                     <div class="vl3"></div>
 
-                    <a href="assets/download/Dusan Ivanovic CV.docx" download class="dwn-resume pulse">DOWNLOAD MY RESUME</a>
+                    <a href="assets/download/Dusan Ivanovic CV.zip" download class="dwn-resume pulse">DOWNLOAD MY RESUME</a>
 
                 </div>
 
@@ -297,7 +307,7 @@
                             },
                             message: {
                                 required: "The *Message field is required!",
-                                rangelength: "The *Messafe must be between 10 and 255 characters!"
+                                rangelength: "The *Message must be between 10 and 255 characters!"
                             }
                         },
                         errorElement: 'p',

@@ -26,7 +26,7 @@ body{
     position: relative;
     top: 35px;
     margin-bottom: 50px;
-    margin-left: 130px;
+    margin-left: 100px;
 }
 
 
@@ -46,6 +46,11 @@ body{
 
 
 /* navigation */
+
+#main-nav{
+    z-index: 100;
+    
+}
 
 .nav-side{
     text-align: center;
@@ -89,7 +94,7 @@ body{
     height: 100vh;
     width: 80px;
     padding: 30px 0;
-     
+    display: none; 
 }
 
 .nav-side-mob #nav-credits{
@@ -192,6 +197,35 @@ body{
 0 0 150px #828494;
 }
 
+.hamburger{
+    display: block;
+    
+    padding: 15px 20px;
+}
+
+.hamburger.hamburger.is-active{
+    background: #1d212e;
+}
+
+.hamburger.is-active .hamburger-inner, 
+.hamburger.is-active .hamburger-inner::after, 
+.hamburger.is-active .hamburger-inner::before{
+    background-color: #c5d2e7;
+}
+
+.hamburger .hamburger-inner, 
+.hamburger .hamburger-inner::after, 
+.hamburger .hamburger-inner::before{
+    background-color: #1d212e;
+}
+
+
+.lockScroll{
+    position: fixed;
+}
+
+
+
 
 .mbot1{
     margin-bottom: 100px !important;    
@@ -237,8 +271,8 @@ body{
 }
 
 .about-me figure{
-    width: 220px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     margin: 0 auto;
     margin-bottom: 40px;
 }
@@ -258,7 +292,15 @@ body{
 }
 
 .about-me .bot-mail p{
-    text-indent: 0;
+    text-indent: 0; 
+}
+
+.about-me .bot-mail{
+    padding: 50px 10px;
+}
+
+.about-me .bot-mail p span{
+    font-size: 10px;
 }
 
 .about-me .copy{
@@ -849,7 +891,7 @@ body{
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 100; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
@@ -871,7 +913,7 @@ body{
     align-items: center;
     
   height: 80%;
-  font: 700 2rem "News Cycle", sans-serif;
+  font: 700 1.5rem "News Cycle", sans-serif;
   letter-spacing: .15em;
   color: #ff6;
   background: url("../assets/background/sw-death.jpg");
@@ -882,11 +924,13 @@ body{
   }
 
   .titles p{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   
   /* The Close Button */
   .close {
+    position: relative;
+    right:5px;
     align-self: right;
     color: #aaaaaa;
     font-size: 28px;
