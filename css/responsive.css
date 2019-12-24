@@ -5,6 +5,13 @@
         font-size: 14px;
     }
 
+  
+    .nav-top{
+    
+        display: flex;
+    }
+
+
     .hamburger{
         display: none;
     }
@@ -38,7 +45,7 @@
     }
 
     .field{
-        top: 80px;
+        top: 30px;
         margin-left: auto;
     }
 
@@ -157,8 +164,18 @@
 
 
 
+
 @media(min-width:992px){
 
+
+    .nav-top{
+    
+        display: none;
+    }
+
+    .nav-side{
+        display: block;
+    }
 
     .rating span{
         font-size: 30px;
@@ -193,6 +210,10 @@
 
     .starwars .titles {
         font-size: 220%;
+    }
+
+    .field{
+        top: 40px;
     }
 
 }

@@ -9,7 +9,7 @@ const nav = document.getElementById('main-nav');
 
 
 
-let screenW = document.documentElement.clientWidth;
+/* let screenW = document.documentElement.clientWidth;
 
 
 if (screenW > 992) {
@@ -25,27 +25,13 @@ if (screenW > 992) {
   nav.classList.remove("nav-top")
   nav.classList.add("nav-side-mob")
 }
-
-window.onresize = function(){
-  if (screenW > 992) {
-    nav.classList.remove("nav-top")
-    nav.classList.remove("nav-side-mob")
-    nav.classList.add("nav-side")
-  } else if (screenW > 600) {
-    nav.classList.remove("nav-side")
-    nav.classList.remove("nav-side-mob")
-    nav.classList.add("nav-top");
-  } else {
-    nav.classList.remove("nav-side")
-    nav.classList.remove("nav-top")
-    nav.classList.add("nav-side-mob")
-  }
-}
+ */
 
 
 
 
-function emptyClass(id) {
+
+/* function emptyClass(id) {
   document.getElementById(`${id}`).className = " ";
 
 }
@@ -88,9 +74,11 @@ if (nav.classList.contains("nav-side-mob")) {
   changeContent("nav-projects", "PROJECTS");
   changeContent("nav-contact", "CONTACT");
   
-}
+} */
 
 
+
+  const navMob = document.getElementById("mob-nav");
 
 
   // Look for .hamburger
@@ -101,11 +89,11 @@ if (nav.classList.contains("nav-side-mob")) {
     hamburger.classList.toggle("is-active");
     // Do something else, like open/close menu
     if(hamburger.classList.contains("is-active")){
-      nav.style.display = "block";
+      navMob.style.display = "block";
       console.log("active")
       document.body.classList.add("lockScroll");
     }else{
-      nav.style.display = "none"
+      navMob.style.display = "none"
       console.log("not")
       document.body.classList.remove("lockScroll");
     }
@@ -161,8 +149,12 @@ var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
-var btn2 = document.getElementById("myBtn2");
+var btnT = document.getElementById("myBtnT");
+var btnM = document.getElementById("myBtnM");
 
+var btn2 = document.getElementById("myBtn2");
+var btnT2 = document.getElementById("myBtnT2");
+var btnM2 = document.getElementById("myBtnM2");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -173,6 +165,20 @@ btn.onclick = function () {
   sw.classList.add("starwars");
   btn.style.display = "none";
   btn2.style.display = "inline-block";
+}
+
+btnT.onclick = function () {
+  modal.style.display = "block";
+  sw.classList.add("starwars");
+  btnT.style.display = "none";
+  btnT2.style.display = "inline-block";
+}
+
+btnM.onclick = function () {
+  modal.style.display = "block";
+  sw.classList.add("starwars");
+  btnM.style.display = "none";
+  btnM2.style.display = "inline-block";
 }
 
 // When the user clicks on <span> (x), close the modal
